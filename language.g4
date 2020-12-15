@@ -35,6 +35,7 @@ rvalue:
       Num
     | Str
     | Date
+    | Lundefined
     | bool
     | allocation
     | lvalue
@@ -144,15 +145,9 @@ Laddhandler: 'addhandler' | 'добавитьобработчик' ;
 Lremovehandler: 'removehandler' | 'удалитьобработчик' ;
 
 Lnull: 'null' ;
-Lboolean: 'boolean' | 'булево' ;
 Ltrue: 'true' | 'истина' ;
 Lfalse: 'false' | 'ложь' ;
-Ldate: 'date' | 'дата' ;
-Lnumber: 'number' | 'число' ;
-Lstring: 'string' | 'строка' ;
 Lundefined: 'undefined' | 'неопределено' ;
-Ltype: 'type' | 'тип' ;
-Ltypeof: 'typeof' | 'типзнч' ;
 	
 Lexport: 'export' | 'экспорт' ;
 Lval: 'val' | 'знач' ;
